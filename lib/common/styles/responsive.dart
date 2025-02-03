@@ -5,6 +5,7 @@ double height(BuildContext context) => MediaQuery.of(context).size.height;
 double width(BuildContext context) => MediaQuery.of(context).size.width;
 
 
+double text28(BuildContext context) => width(context) * .075;
 double text24(BuildContext context) => width(context) * .06;
 double text22(BuildContext context) => width(context) * .055;
 double text20(BuildContext context) => width(context) * .05;

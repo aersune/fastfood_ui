@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:products_ui/main.dart';
 import '../../../../common/styles/colors.dart';
 import '../../../../common/styles/responsive.dart';
 import '../../../../common/styles/text_style.dart';
@@ -22,7 +21,7 @@ class TakeButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(8),
           border: Border.all(color: AppColors.primary, width: 1),
         ),
-        child: Center(child: Text('TAKE AWAY', style: AppStyle.h1.copyWith(color: AppColors.primary, fontSize: 16),)),
+        child: Center(child: Text('TAKE AWAY', style: AppStyle.h1.copyWith(color: AppColors.primary, fontSize: text16(context)),)),
       ),
     );
   }

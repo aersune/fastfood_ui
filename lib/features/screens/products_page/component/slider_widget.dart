@@ -25,14 +25,15 @@ class _SliderWidgetState extends State<SliderWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
 
-      child: Column(
-        children: [
-          Stack(
-            children: [
-              CarouselSlider.builder(
-                itemCount: 5,
+    return Column(
+      children: [
+        Stack(
+          children: [
+            SizedBox(
+              // height: height(context) * .3,
+              child: CarouselSlider.builder(
+                itemCount: widget.result.length,
                 itemBuilder: (context, index, realIndx) {
                   return Center(
                       child: CachedNetworkImage(
@@ -41,11 +42,13 @@ class _SliderWidgetState extends State<SliderWidget> {
                           placeholder: (context, url) => const Center(
                                 child: CircularProgressIndicator(),
                               ),
-                          imageBuilder: (context, imageProvider) => Image(
-                                image: imageProvider,
-                                fit: BoxFit.cover,
-                              ),
-                          width: 1000));
+                          imageBuilder: (context, imageProvider) =>  Image(
+                            image: imageProvider,
+                            fit: BoxFit.cover,
+                          ),
+                        width: 1000,
+
+                        ));
                 },
                 options: CarouselOptions(
 
@@ -55,25 +58,27 @@ class _SliderWidgetState extends State<SliderWidget> {
 
                      });
                   },
-                  height: height(context) * .31,
+
+                  // height: height(context) * .3,
                   autoPlay: false,
                   viewportFraction: 1,
                   enlargeFactor: 0,
-                  aspectRatio: 5,
+                  aspectRatio: width(context) / (height(context) * .3),
+                  // aspectRatio: 19 / ,
 
                   enlargeCenterPage: true,
                 ),
               ),
-              Positioned(
-                bottom: 20,
-                right: 20,
-                child: BuildIndicator(count: 5, currentPage: currentPage,),)
-            ],
-          ),
+            ),
+            Positioned(
+              bottom: 20,
+              right: 20,
+              child: BuildIndicator(count: 5, currentPage: currentPage,),)
+          ],
+        ),
 
 
-        ],
-      ),
+      ],
     );
   }
 

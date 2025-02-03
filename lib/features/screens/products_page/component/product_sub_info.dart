@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:products_ui/common/styles/responsive.dart';
 
 import '../../../../common/styles/text_style.dart';
 
@@ -19,8 +20,8 @@ class ProductSubInfo extends StatelessWidget {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(title, style: AppStyle.light.copyWith(fontSize: 14),),
-            Text(subtitle, style: AppStyle.normal.copyWith(fontSize: 16),),
+            Text(title, style: AppStyle.light.copyWith(fontSize: text14(context)),),
+            Text(subtitle, style: AppStyle.normal.copyWith(fontSize: text16(context)),),
           ],
         )
       ],

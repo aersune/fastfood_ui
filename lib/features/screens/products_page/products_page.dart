@@ -1,15 +1,16 @@
 import 'package:auto_route/annotations.dart';
 import 'package:flutter/material.dart';
+import 'package:products_ui/common/styles/text_style.dart';
 import 'package:products_ui/features/models/product_model.dart';
 import 'package:products_ui/features/screens/products_page/component/slider_widget.dart';
 import 'package:products_ui/features/screens/products_page/widget/products_body.dart';
 
 import '../../../common/styles/colors.dart';
-
+import '../../../common/styles/responsive.dart';
 
 @RoutePage()
 class ProductsPage extends StatefulWidget {
- const ProductsPage({super.key});
+  const ProductsPage({super.key});
 
   @override
   State<ProductsPage> createState() => _ProductsPageState();
@@ -46,11 +47,10 @@ class _ProductsPageState extends State<ProductsPage> {
     }
   }
 
+  var appbarText = 'Seafood';
+
   @override
   Widget build(BuildContext context) {
-
-    final size = MediaQuery.of(context).size;
-
     return Scaffold(
       extendBody: true,
       body: CustomScrollView(
@@ -79,15 +79,21 @@ class _ProductsPageState extends State<ProductsPage> {
                     color: Colors.white,
                   ))
             ],
-            backgroundColor: Colors.transparent,
+            backgroundColor: Colors.white,
             excludeHeaderSemantics: true,
-            expandedHeight: size.height * .31,
+            expandedHeight: height(context) * .3,
+            // toolbarHeight: height(context) * .05,
+            floating: false,
+            title: Text(
+              _isAppBarCollapsed ? appbarText : '',
+              style: AppStyle.normal.copyWith(color: Colors.white, fontSize: text24(context)),
+            ),
             flexibleSpace: AnimatedContainer(
               duration: Duration(milliseconds: 500), // Animation duration
               color: _isAppBarCollapsed ? AppColors.primary : Colors.white,
               child: FlexibleSpaceBar(
                 background: SliderWidget(
-                  result: Product.products,
+                  result: Product.products.sublist(0, 5),
                 ), // Carousel slider
               ),
             ),
@@ -95,8 +101,15 @@ class _ProductsPageState extends State<ProductsPage> {
             pinned: true, // App bar stays pinned at the top
           ),
           SliverToBoxAdapter(
-            child: ProductsBody(title: 'Mayfield Bakery & Cafe', products: Product.products,)
-          )
+              child: ProductsBody(
+            title: 'Mayfield Bakery & Cafe',
+            products: Product.products,
+            valueSetter: (val) {
+              setState(() {
+                appbarText = val;
+              });
+            },
+          ))
         ],
       ),
     );
