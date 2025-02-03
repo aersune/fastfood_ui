@@ -4,7 +4,8 @@ import 'package:products_ui/features/models/product_model.dart';
 import 'package:products_ui/features/screens/products_page/component/slider_widget.dart';
 import 'package:products_ui/features/screens/products_page/widget/products_body.dart';
 
-import '../../../styles/colors.dart';
+import '../../../common/styles/colors.dart';
+
 
 @RoutePage()
 class ProductsPage extends StatefulWidget {
@@ -22,6 +23,7 @@ class _ProductsPageState extends State<ProductsPage> {
   @override
   void initState() {
     super.initState();
+
     _scrollController.addListener(_onScroll);
   }
 

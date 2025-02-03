@@ -1,9 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:products_ui/features/models/product_model.dart';
-import 'package:products_ui/styles/responsive.dart';
-import '../../../../main.dart';
-import '../../../../styles/text_style.dart';
+import '../../../../common/styles/responsive.dart';
+import '../../../../common/styles/text_style.dart';
 
 class FeaturedItems extends StatelessWidget {
   const FeaturedItems({super.key});

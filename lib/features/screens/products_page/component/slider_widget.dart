@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:products_ui/styles/responsive.dart';
+import '../../../../common/styles/responsive.dart';
 import '../../../models/product_model.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 

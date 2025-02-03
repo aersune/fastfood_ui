@@ -60,7 +60,7 @@ class MenuItem {
 class MenuItemWidget extends StatelessWidget {
   final MenuItem menuItem;
 
-  MenuItemWidget({required this.menuItem});
+  const MenuItemWidget({required this.menuItem});
 
   @override
   Widget build(BuildContext context) {

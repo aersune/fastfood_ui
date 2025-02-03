@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:products_ui/main.dart';
-import 'package:products_ui/styles/responsive.dart';
-import '../../../../styles/colors.dart';
-import '../../../../styles/text_style.dart';
+import '../../../../common/styles/colors.dart';
+import '../../../../common/styles/responsive.dart';
+import '../../../../common/styles/text_style.dart';
+
 
 class TakeButton extends StatelessWidget {
   const TakeButton({super.key});

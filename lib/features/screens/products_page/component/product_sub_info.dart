@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../styles/text_style.dart';
+import '../../../../common/styles/text_style.dart';
 
 
 class ProductSubInfo extends StatelessWidget {

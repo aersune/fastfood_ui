@@ -3,8 +3,8 @@ import 'package:products_ui/features/models/product_model.dart';
 import 'package:products_ui/features/screens/products_page/component/take_button.dart';
 import 'package:products_ui/features/screens/products_page/widget/tabbar/tabbar_widget.dart';
 
-import '../../../../styles/colors.dart';
-import '../../../../styles/text_style.dart';
+import '../../../../common/styles/colors.dart';
+import '../../../../common/styles/text_style.dart';
 import '../component/product_sub_info.dart';
 import 'featured_items.dart';
 

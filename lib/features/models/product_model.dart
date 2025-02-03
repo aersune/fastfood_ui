@@ -28,14 +28,14 @@ class Product {
     ),
     Product(
       id: '1',
-      image: 'https://images.unsplash.com/photo-1550547660-d9450f859349',
+      image: 'https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c3VzaGl8ZW58MHx8MHx8fDA%3D',
       title: 'Sushi',
       price: '\$22',
       category: 'seafoods',
     ),
     Product(
       id: '2',
-      image: 'https://images.unsplash.com/photo-1611143669185-af224c5e0102',
+      image: 'https://images.unsplash.com/photo-1625943555419-56a2cb596640?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Shrimp Scampi',
       price: '\$28',
       category: 'seafoods',
@@ -52,7 +52,7 @@ class Product {
     ),
     Product(
       id: '1',
-      image: 'https://images.unsplash.com/photo-1586190848861-99aa4a171e90',
+      image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Pizza',
       price: '\$18',
       category: 'fastfuuds',
@@ -66,7 +66,7 @@ class Product {
     ),
     Product(
       id: '3',
-      image: 'https://images.unsplash.com/photo-1550547660-d9450f859349',
+      image: 'https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Sushi',
       price: '\$22',
       category: 'seafoods',
@@ -104,14 +104,14 @@ class Product {
     ),
     Product(
       id: '4',
-      image: 'https://images.unsplash.com/photo-1550547660-d9450f859349',
+      image: 'https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Sushi',
       price: '\$22',
       category: 'seafoods',
     ),
     Product(
       id: '5',
-      image: 'https://images.unsplash.com/photo-1611143669185-af224c5e0102',
+      image: 'https://images.unsplash.com/photo-1625943555419-56a2cb596640?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Shrimp Scampi',
       price: '\$28',
       category: 'seafoods',
@@ -167,7 +167,7 @@ class Product {
     ),
     Product(
       id: '13',
-      image: 'https://images.unsplash.com/photo-1610447847416-40bac442f833',
+      image: 'https://images.unsplash.com/photo-1606755456206-b25206cde27e',
       title: 'Fried Shrimp',
       price: '\$25',
       category: 'seafoods',
@@ -181,7 +181,7 @@ class Product {
     ),
     Product(
       id: '15',
-      image: 'https://images.unsplash.com/photo-1615874959474-df545d1ec1c8',
+      image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd',
       title: 'Sashimi',
       price: '\$35',
       category: 'seafoods',
